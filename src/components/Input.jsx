@@ -28,12 +28,16 @@ const From = () => {
 
   return (
     <div>
-      <form onSubmit={handleSubmit} action='' className='w-[400px] flex flex-col gap-7 m-20'>
-        <input type='text' name='email' onChange={handleChange} className='border-[1px] border-black w-full py-2 pl-4' placeholder='Email' />
+      <form onSubmit={handleSubmit} action='' className='w-[500px] flex flex-col gap-7 m-20'>
+        <div className='flex flex-col gap-4 text-lg'>
+          <p>Email : roy@gmail.com</p>
+          <p>Password : 123</p>
+        </div>
+        <input type='text' name='email' onChange={handleChange} className='border-[1px] border-black w-full p-5 text-xl focus:outline-none  rounded-md placeholder:text-xl' placeholder='Email' />
 
-        <input type='password' name='password' onChange={handleChange} className='border-[1px] border-black w-full py-2 pl-4' placeholder='Password' />
+        <input type='password' name='password' onChange={handleChange} className='border-[1px] text-xl border-black w-full p-5 focus:outline-none  rounded-md placeholder:text-xl' placeholder='Password' />
 
-        <button type='submit' className='border-[1px] border-purple-500 py-2'>
+        <button type='submit' className='border-[1px] border-purple-500 py-3'>
           Submit
         </button>
 
